@@ -23,6 +23,7 @@ header, main, footer {
   margin: 0 auto;
 }
 
+/* Header Grid + Nav Flex */
 header {
   display: grid;
   grid-template-columns: 120px 1fr 2fr;
@@ -30,17 +31,15 @@ header {
   gap: 10px;
   padding: 16px;
   background-color: var(--primary-color);
-  color: var(--accent2-color);
 }
 
 header img {
   width: 100px;
-  height: auto;
 }
 
 header h1 {
   font-family: var(--heading-font);
-  font-size: 1.8rem;
+  margin: 0;
 }
 
 header nav ul {
@@ -56,6 +55,7 @@ header nav a {
   font-weight: bold;
 }
 
+/* Hero */
 .hero {
   position: relative;
 }
@@ -98,6 +98,7 @@ header nav a {
   border-radius: 6px;
 }
 
+/* History Section */
 section.history {
   background-color: #ffffff;
   margin: 16px 0;
@@ -111,6 +112,7 @@ section.history h2 {
   margin-bottom: 8px;
 }
 
+/* Adventures Section */
 section.adventures {
   display: flex;
   justify-content: space-between;
@@ -144,6 +146,7 @@ section.adventures h2 {
   color: #333;
 }
 
+/* Footer */
 footer {
   margin-top: 40px;
   padding: 16px;
@@ -159,18 +162,17 @@ footer p {
   margin: 8px;
 }
 
-footer .socialmedia {
+footer .socialmedia ul {
   display: flex;
-  justify-content: flex-end;
+  list-style: none;
   gap: 12px;
-  margin: 8px;
 }
 
-.socialmedia a {
+footer .socialmedia a {
   text-decoration: none;
 }
 
-.socialmedia img {
+footer .socialmedia img {
   width: 32px;
   height: auto;
 }
