@@ -1,71 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Contact Dry Oar Rafting for reservations, general inquiries, or website suggestions. Reach out by phone, email, or message form.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dry Oar Rafting | Contact Us</title>
-  <link rel="stylesheet" href="rafting.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Dry Oar Rafting for trip details, reservations, and more." />
+  <title>Contact Us - Dry Oar Rafting</title>
+  <link rel="stylesheet" href="styles/rafting.css" />
 </head>
 <body>
   <header>
-    <img src="images/rafting-logo.png" alt="Dry Oar Rafting logo">
-    <h1>Dry Oar Rafting</h1>
+    <img src="images/logo.png" alt="Dry Oar Logo" />
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="contact.html">Contact Us</a>
-  </nav>
-
   <main>
-    <section class="contact-info">
-      <h2>Contact Information</h2>
-      <p>Address: 123 River Run Rd, Salmon, ID 83467</p>
+    <h1>Contact Us</h1>
+
+    <section class="company-info">
+      <h2>Our Location</h2>
+      <p>123 Riverbend Lane<br>Salmon, ID 83467</p>
       <p>Phone: (208) 555-RAFT (7238)</p>
-      <p>Email: info@dryoarrafting.com</p>
+      <p>Email: contact@dryoarrafting.com</p>
       <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000!2d-113.9945!3d45.1759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x535e0d4975eccc0b%3A0xf2dc109b9f8df5a1!2sSalmon%2C%20ID!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus" 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22992.070356471336!2d-113.9936892306305!3d45.17558212213871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x535f0dc9474b01ed%3A0xb170d03b1e0c8e1d!2sSalmon%2C%20ID%2083467%2C%20USA!5e0!3m2!1sen!2sph!4v1626650024992"
         width="100%" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
       </iframe>
     </section>
 
     <section class="employee-section">
       <h2>Meet Our Team</h2>
-      <figure>
-        <img src="images/raftinghappy.jpg" alt="Happy Employee 1">
-        <figcaption>Jessica - Reservations Specialist</figcaption>
+      <figure class="employee">
+        <img src="emplo1.jpg" alt="Sarah – Adventure Guide">
+        <figcaption>Sarah – Adventure Guide</figcaption>
       </figure>
-      <figure>
-        <img src="images/rafting4.jpg" alt="Happy Employee 2">
-        <figcaption>Tom - River Guide Manager</figcaption>
+      <figure class="employee">
+        <img src="emplo2.jpg" alt="Jason – Safety Coordinator">
+        <figcaption>Jason – Safety Coordinator</figcaption>
       </figure>
-      <figure>
-        <img src="images/rafting5.jpg" alt="Happy Employee 3">
-        <figcaption>Sara - Safety Coordinator</figcaption>
+      <figure class="employee">
+        <img src="emplo3.jpg" alt="Emily – Customer Support">
+        <figcaption>Emily – Customer Support</figcaption>
       </figure>
     </section>
 
     <section class="contact-form">
       <h2>Send Us a Message</h2>
       <form>
-        <label for="username">Full Name:</label>
-        <input type="text" id="username" name="username" required>
+        <label for="username">Name:</label>
+        <input type="text" id="username" name="username" required />
 
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
 
-        <p>Message Purpose:</p>
-        <label><input type="radio" name="purpose" value="general" required> General Inquiry</label><br>
-        <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label><br>
-        <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+        <p>What is the purpose of your message?</p>
+        <label><input type="radio" name="purpose" value="general" required /> General Inquiry</label><br />
+        <label><input type="radio" name="purpose" value="reservation" /> Reservation Question</label><br />
+        <label><input type="radio" name="purpose" value="suggestion" /> Website Suggestion</label>
 
-        <label for="message">Your Message:</label>
+        <label for="message">Message:</label>
         <textarea id="message" name="message" rows="5" required></textarea>
 
         <label>
-          <input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter
+          <input type="checkbox" name="subscribe" />
+          Please subscribe me to the monthly newsletter
         </label>
 
         <button type="submit">Send Message</button>
@@ -75,12 +76,12 @@
 
   <footer>
     <p>© 2025 Dry Oar Rafting</p>
-    <div class="social-icons">
-      <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-      <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
-      <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-    </div>
-    <a href="https://example.com/contact-wireframe" target="_blank">View Wireframe</a>
+    <nav class="social">
+      <a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
+      <a href="#"><img src="images/twitter.png" alt="Twitter" /></a>
+      <a href="#"><img src="images/instagram.png" alt="Instagram" /></a>
+    </nav>
+    <p><a href="https://your-wireframe-link.com">View Wireframe</a></p>
   </footer>
 </body>
 </html>
