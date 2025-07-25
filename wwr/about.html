@@ -3,77 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Your Name">
-  <meta name="description" content="About Our White Water Rafting Company">
-  <title>White Water Rafting - About Us</title>
+  <title>White Water Rafting Co. – Contact Us</title>
+  <meta name="description" content="Contact White Water Rafting Co. for address, phone, email, map, and message inquiries.">
   <link rel="stylesheet" href="styles/rafting.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
 <body>
-
   <header>
-    <img src="images/rafting-logo.png" alt="Rafting Company Logo">
-    <h1>White Water Rafting Co.</h1>
+    <img src="images/logo.png" alt="Rafting Site Logo" class="site-logo">
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="trips.html">Trips</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html" class="active">Contact</a>
     </nav>
   </header>
 
   <main>
-    <div class="hero">
-      <img src="images/raftinghero.jpg" alt="Rafting Adventure">
-      <h1>White Water Rafting Co.</h1>
-      <article>
-        <img src="images/raftinghappy.jpg" alt="Smiling Rafter">
-        <p>We provide the best white water rafting experiences for adventurers of all ages. Come and experience the thrill of the rapids with our friendly, professional guides!</p>
-      </article>
-    </div>
+    <h1>Contact Us</h1>
 
-    <section class="history">
-      <h2>History</h2>
-      <p>White Water Rafting Co. was founded in 2005 by a group of outdoor enthusiasts. We’ve grown to become one of the top rafting companies in the region, offering safe, fun, and unforgettable trips for families and thrill-seekers alike.</p>
+    <section class="contact-info">
+      <h2>Our Office</h2>
+      <p>123 River Road, Adventure Town</p>
+      <p>Phone: (123) 456-7890</p>
+      <p>Email: <a href="mailto:info@whitewaterrafting.com">info@whitewaterrafting.com</a></p>
     </section>
 
-    <section class="adventures">
-      <h2>Adventure Awaits You!</h2>
-      <figure>
-        <img src="images/rafting-1_1.jpg" alt="Los Dientes del Diablo">
-        <figcaption>Los Dientes del Diablo</figcaption>
-      </figure>
-      <figure>
-        <img src="images/rafting2_1.jpg" alt="Big Mallard">
-        <figcaption>Big Mallard</figcaption>
-      </figure>
-      <figure>
-        <img src="images/rafting3_1.jpg" alt="Half Day Adventure">
-        <figcaption>Half Day Adventure</figcaption>
-      </figure>
-      <figure>
-        <img src="images/rafting4.jpg" alt="Thunder Canyon">
-        <figcaption>Thunder Canyon</figcaption>
-      </figure>
-      <figure>
-        <img src="images/rafting5.jpg" alt="Wild Rapids">
-        <figcaption>Wild Rapids</figcaption>
-      </figure>
+    <!-- Google Map Section -->
+    <section class="map-section">
+      <iframe
+        src="https://maps.google.com/maps?q=Grand%20Canyon&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        width="100%" height="300" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </section>
+
+    <section class="employee-section">
+      <h2>Meet Our Team</h2>
+      <div class="employee-gallery">
+        <figure>
+          <img src="images/emplo1.jpg" alt="Emily – Tour Guide" class="employee-img">
+          <figcaption>Emily – Tour Guide</figcaption>
+        </figure>
+        <figure>
+          <img src="images/emplo2.jpg" alt="Jake – Safety Specialist" class="employee-img">
+          <figcaption>Jake – Safety Specialist</figcaption>
+        </figure>
+        <figure>
+          <img src="images/emplo3.jpg" alt="Sarah – Office Manager" class="employee-img">
+          <figcaption>Sarah – Office Manager</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <h2>Contact Form</h2>
+      <form>
+        <label>Name<input type="text" name="name" required></label>
+        <label>Email<input type="email" name="email" required></label>
+        <label>Purpose of Message:
+          <select name="purpose">
+            <option value="general">General Inquiry</option>
+            <option value="reservation">Reservation Question</option>
+            <option value="feedback">Website Suggestion</option>
+          </select>
+        </label>
+        <label>Message<textarea name="message" required></textarea></label>
+        <label><input type="checkbox" name="subscribe"> Subscribe to monthly newsletter</label>
+        <button type="submit">Send Message</button>
+      </form>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 White Water Rafting Co. | Your Name</p>
+    <p>© 2025 White Water Rafting Co.</p>
     <nav class="socialmedia">
-      <ul>
-        <li><a href="#"><img src="images/facebook.png" alt="Facebook"></a></li>
-        <li><a href="#"><img src="images/twitter.png" alt="Twitter"></a></li>
-        <li><a href="#"><img src="images/instagram.png" alt="Instagram"></a></li>
-      </ul>
+      <a href="#"><img src="images/facebook.png" alt="Facebook" class="social-icon"></a>
+      <a href="#"><img src="images/twitter.png" alt="Twitter" class="social-icon"></a>
+      <a href="#"><img src="images/instagram.png" alt="Instagram" class="social-icon"></a>
     </nav>
+    <p><a href="wireframe.jpg" target="_blank">View Contact Page Wireframe</a></p>
   </footer>
-
 </body>
 </html>
