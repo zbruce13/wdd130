@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Welcome to the official site of our Rafting Adventures. Plan your next trip!">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rafting Site | Home</title>
+  <meta name="description" content="Welcome to Dry Oar Rafting - your adventure starts here! Discover thrilling white water rafting trips and sign up for our newsletter.">
+  <title>Dry Oar Rafting | Home</title>
   <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
@@ -21,54 +21,64 @@
   <main>
     <!-- Hero Section -->
     <section class="hero">
-      <h1>Adventure Awaits!</h1>
-      <p>Join us for the experience of a lifetime</p>
+      <h1>Experience the Thrill of Rafting</h1>
+      <p>Adventure, excitement, and unforgettable memories await you!</p>
     </section>
 
     <!-- Call to Action -->
-    <section class="cta">
-      <h2>Ready to book a trip?</h2>
-      <a href="trips.html" class="btn">Explore Trips</a>
+    <section>
+      <p style="text-align: center; font-size: 1.2rem;">
+        Ready to ride the rapids? <a class="btn" href="trips.html">Explore Our Trips</a>
+      </p>
     </section>
 
-    <!-- Newsletter Signup -->
-    <section class="form-section">
-      <h2>Subscribe to our Newsletter</h2>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <button type="submit">Sign Me Up</button>
-      </form>
-    </section>
-
-    <!-- Grid Section -->
-    <section class="grid-section">
-      <h2>Why Raft With Us?</h2>
-      <div class="grid-container">
-        <div>
-          <img src="images/trip2.jpg" alt="Rafting action">
-          <p>Experienced guides with years of training</p>
-        </div>
-        <div>
-          <img src="images/trip3.jpg" alt="Rafting teamwork">
-          <p>Beautiful scenery and unforgettable memories</p>
-        </div>
+    <!-- Grid Content Section -->
+    <section class="trip-cards">
+      <div class="trip-card">
+        <img src="images/trip1.jpg" alt="Rafting Adventure">
+        <h2>Why Raft With Us?</h2>
+        <p>We offer safe, exciting trips guided by trained professionals who love the outdoors.</p>
       </div>
+      <div class="trip-card">
+        <img src="images/trip2.jpg" alt="Scenic River">
+        <h2>Scenic Destinations</h2>
+        <p>Our routes include some of the most beautiful canyons and rivers in the country.</p>
+      </div>
+      <div class="trip-card">
+        <img src="images/trip3.jpg" alt="Team Fun">
+        <h2>Fun For Everyone</h2>
+        <p>Whether it’s a family vacation or group event, we have a rafting package for you.</p>
+      </div>
+    </section>
+
+    <!-- Newsletter Form -->
+    <section class="form-section">
+      <h2>Sign Up for Our Newsletter</h2>
+      <form>
+        <label for="newsletter-name">Name:</label>
+        <input type="text" id="newsletter-name" name="newsletter-name" required>
+
+        <label for="newsletter-email">Email:</label>
+        <input type="email" id="newsletter-email" name="newsletter-email" required>
+
+        <button type="submit">Sign Me Up!</button>
+      </form>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Rafting Adventures</p>
+    <p>&copy; 2025 Dry Oar Rafting</p>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="trips.html">Trips</a>
       <a href="contact.html">Contact</a>
     </nav>
+    <div>
+      <a href="#"><img src="images/facebook.png" alt="Facebook" class="social-icon"></a>
+      <a href="#"><img src="images/twitter.png" alt="Twitter" class="social-icon"></a>
+      <a href="#"><img src="images/instagram.png" alt="Instagram" class="social-icon"></a>
+    </div>
   </footer>
 </body>
 </html>
