@@ -165,3 +165,80 @@ th {
   background-color: #2c3e50;
   color: white;
 }
+/* Hero section for Trips page */
+.hero {
+  background: url("../images/trip1.jpg") center/cover no-repeat;
+  color: white;
+  padding: 6rem 2rem;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Trip Cards Grid */
+.trip-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.trip-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.trip-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.trip-card h2 {
+  margin: 1rem 0 0.5rem;
+  color: #2c3e50;
+}
+
+.trip-card p {
+  padding: 0 1rem;
+  color: #444;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #2c3e50;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #1a242f;
+}
+
+/* Trip Summary section */
+.trip-summary {
+  margin-top: 3rem;
+}
+
+.trip-summary h2 {
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  text-align: center;
+}
